@@ -1,4 +1,4 @@
-const bubbleColor="#1AA2B8";
+const bubbleColor="#74897E";
 
 export const ParticlesConfig = {
     particles: {

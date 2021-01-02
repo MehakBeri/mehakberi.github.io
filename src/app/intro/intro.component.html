@@ -1,10 +1,206 @@
-<div class="jumbotron">
-    <h1 class="display-4">MEHAK BERI-INTRO</h1>
-    <p class="lead">I enjoy telling stories via data & buildling software</p>
-    <hr class="my-4">
-    <p>Scroll to learn more. Need to add linkedin, email & git link </p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
-    <p>todo: center the text and have a white border with a fading black bg. also exp with fonts. plus add dynamic bg to ths component</p>
+<div class="container-fluid page">
+  <div class="vertical-center">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="assets/memoji.jpg" alt="Mehak" style="width: 100%;">
+      </div>
+      <div class="col-md-9">
+        <h3>Hi, I am Mehak.</h3>
+        <h4 class="title">Data & Software Specialist</h4>
+        <p>Jack of all trades and master of some, I am Masters in Computer Science from University of Texas at Dallas and I harbor a deep interest in telling stories using data & code. I am a leader by nature and absolutely enjoy learning!</p>
+        <p>I have had the fortune to work with exceptional people from over the world at startups and at companies like Apple and Samsung, in the capacity of a Machine Learning Engineer and as Software Engineer.</p>
+        <button type="button" class="btn btn-outline-secondary" (click)="scrollToElement(publications)">PUBLICATIONS</button>
+        <button type="button" class="btn btn-outline-secondary" (click)="scrollToElement(skills)">SKILLS</button>
+        <button type="button" class="btn btn-outline-secondary" (click)="scrollToElement(timeline)">TIMELINE</button>
+        <button type="button" class="btn btn-outline-secondary" (click)="scrollToElement(spec)">SPECIALTIES</button>
+        <button type="button" class="btn btn-outline-secondary" (click)="scrollToElement(spec)">RECOGNITION</button>
+      </div>
+    </div>
+    <br>
+    <div style="text-align: center;">
+      <i-bs
+        name="arrow-down-circle-fill"
+        class="text"
+        width="5rem"
+        height="5rem">
+      </i-bs>
+      <br #publications><br><br>
+
+      <h3>Publications</h3>
+      <br>
+      <div class="row">
+        <div class="col-md-6 card">
+          <h4>Rotation Direction Control by Finger Movement</h4>
+          <p>
+            Dec 19, 2014<br>
+            IEEE International Conference on Computational Intelligence and Computing Research (2014 IEEE ICCIC)<br>
+            IEEE Xplore Catalog Number:CFP1420J-ART ISBN:978-1-4799-3975-6
+          </p>
+          <a href="https://ieeexplore.ieee.org/document/7238520?reload=true"><button type="button" class="btn btn-dark">LINK</button></a>
+        </div>
+        <div class="col-md-6 card">
+          <h4>Intelligent Floating Car Parking System</h4>
+          <p>
+            Dec 24, 2014<br>International Conference on Recent Advances and Trends in Electrical Engineering (RATEE 2014)<br>
+            ISBN: 978-93-84869-05-2/323</p>
+          <a href="https://www.researchgate.net/profile/Prashant_Kumar72/publication/275837213_On-line_Monitoring_of_Water_Quality_Index_Using_LabVIEW-A_Review/links/55485d5b0cf26a7bf4dabdd3/On-line-Monitoring-of-Water-Quality-Index-Using-LabVIEW-A-Review.pdf"><button type="button" class="btn btn-dark">LINK</button></a>
+        </div>
+      </div>
+    </div>
+    <br #skills><br><br>
+
+    <h3 style="text-align: center;">Skills</h3>
+    <br>
+    <div class="row">
+      <div class="column">
+        <div class="card">Data Science  (Statistics, Exploratory Data Analysis, Data Wrangling, Data Visualization, Data Science Pipeline, Feature Engineering)</div><br>
+        <div class="card">Splunk</div><br>
+        <div class="card">InfluxDB, Grafana</div><br>
+        <div class="card">Tableau</div><br>
+      </div>
+      <div class="column">
+        <div class="card">Angular</div><br>
+        <div class="card">Javascript/ Typescript</div><br>
+        <div class="card">Flask & Dash</div><br>
+        <div class="card">Git, Jenkins & Agile Methodology</div><br>
+        <div class="card">Machine Learning (Algorithms, WEKA, Keras, Tensorflow)</div><br>
+      </div>
+      <div class="column">
+        <div class="card">Node</div><br>
+        <div class="card">Java</div><br>
+        <div class="card">Algorithm Design & OOPS</div><br>
+        <div class="card">Natural Language Processing</div><br>
+        <div class="card">Big Data (Spark)</div><br>
+      </div>
+      <div class="column">
+        <div class="card">SQL & MongoDB</div><br>
+        <div class="card">Bash/Vim/Perl Scripting</div><br>
+        <div class="card">Python (Numpy, Pandas, Scikit-learn, Scipy, matplotlib, seaborn)</div><br>
+        <div class="card">Database Design</div><br>
+        <div class="card">PHP</div><br>
+      </div>
+    </div>
+    <br #timeline><br><br>
+
+    <h3 style="text-align: center;">Timeline</h3>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h4>Jan 2020 - Present</h4>
+          <h5>Software Engieer | Apple</h5>
+          <ul>
+            <li>Member of the Hardware Tech Signoff Infrastructure Team. Responsible for Full-Stack web development, adding new features, testing and maintaining Signoff software system in a scalable manner</li>
+            <li>Responsive Angular, Typescript,  PHP frontend; Node, PostgreSQL backend; Jasmine, Karma, Python, Bash Scripting, Perl for testing and backend scripting & Redis for caching</li>
+            <li>Responsible for data visualization and dashboard creation for Signoff team using Javascript and Splunk</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h4>Aug 2019 - Dec 2019</h4>
+          <h5>Machine Learning Engieer | Samsung SARC</h5>
+          <ul>
+            <li>SARC(Samsung Austin Research Center) machine learning software platform for IC design automation</li>
+            <li>Physical implementation of machine learning applications for improved quality and productivity for CPU and GPU design</li>
+            <li>Design verification using machine learning applications for improved throughput and quality of CPU and GPU design</li>
+            <li>Data architecture improvement for SARC’s IC design flows</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h4>Aug 2019</h4>
+          <h5>Master of Science, Computer Science, The University of Texas at Dallas</h5>
+          <h6>GPA- 3.89/4.0 | Graduated: Aug 2019 </h6>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h4>May 2019 - Aug 2019</h4>
+          <h5>Machine Learning Intern | Inzone.ai</h5>
+          <ul>
+            <li>Improved Inzone Platform’s Regressor and Classifier by adding early stopping, graphical evidence, custom evaluation metrics and custom loss functions using Keras/Tensorflow</li>
+            <li>Simplified and Improved platform analyzer. Functionality added: Hyperparameter tuning capability via config files, heatmap visualization of correlation, trellis chart for pre processing, data cleanup functions, outlier detection and distribution skewness. Added hyperparameter tuning capabilities to the platform using Grid Search</li>
+            <li>Deployment and testing improvements made to platform. Created executable using pyinstaller to enable platform to run without python version or OS compatibility issues</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h4>Jan 2019 - May 2019</h4>
+          <h5>Machine Learning Intern | Natel Energy | Upstream Tech</h5>
+          <ul>
+            <li>Implemented Convolutional Neural Networks on Satellite Imagery and extracted different band information by extrapolation from given satellite images</li>
+            <li>Aim of the project was to plug the information gap between satellite imagery from Sentinel-1 and Sentinel-2 using historical images from these satellites taken over a variety of terrains and seasons</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h4>May 2018 - Jan 2019</h4>
+          <h5>Machine Learning Intern | Samsung SARC</h5>
+          <ul>
+            <li>Machine Learning for Seed placement & PIML Data (Weka, TensorFlow, Python): Analyzed the semiconductor chip production data (>20K dimensions) at unique design flow steps and recommended register seed placement coordinates to yield better success parameters at the end of flow</li>
+            <li>Time Series Data Modelling (InfluxDB, Grafana): Condensed data at SARC from various sources and design processes to create time series analytics platform. Enabled data visualization, data pre processing and user specific data operations</li>
+            <li>Interactive Data Analysis and Visualization Dashboard (Python, Flask, Dash, MongoDB)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h4>Oct 2017 - May 2018</h4>
+          <h5>Full Stack Programmer | UTD Center for Brain Health</h5>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h4>Jan 2016 - Nov 2016</h4>
+          <h5>Software Engineer | Seekhley, Gemini Solutions, Gurgaon, India</h5>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h4>May 2016</h4>
+          <h5>Bachelor of Engineering, Electrical and Electronics Engineering, Panjab University, Chandigarh, India</h5>
+          <h6>CGPA- 8.33/10 | Graduated with Honors: May 2016</h6>
+        </div>
+      </div>
+    </div>
+    
+    <br #spec><br><br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3 style="text-align: center;">Specialties</h3><br>
+        <ul>
+          <li>Leadership 
+            <ul>
+              <li>President of Literary Club - Magboard, Panjab University</li>
+              <li>Chairperson of Women in Engineering, Panjab University</li>
+              <li>Vice Chairperson of IEEE Student Chapter, Panjab University</li>
+              <li>Conducted Machine Learning Workshop during internship at Samsung</li>
+              <li>Multiple team competitions</li>
+            </ul>
+          </li>
+          <li>Creative Writing</li>
+          <li>Experiential Learning Instructor</li>
+          <li>Anchor & Stage Coordinator</li>
+        </ul>
+      </div>
+      <div class="vl"></div>
+      <div class="">
+        <h3 style="text-align: center;">Recognition</h3><br>
+        <ul>
+          <li>Won 2nd Place in Ultimate Data Science Challenge (Total teams: 124)</li>
+          <li>Won 2nd Place in Sponsored Prizes at HackUTD (Sponsor: Fannie Mae)</li>
+          <li>Won 2nd Place in OneM2M Hackathon organized at UTD, Dallas</li>
+          <li>Conferred IEEE Outstanding WIE Student Volunteer Award</li>
+          <li>Was awarded cash bonus by CEO during ML internship at Inzone.ai <br>because of exceptional work</li>
+        </ul>
+      </div>
+    </div>
+    
+    <br><br><br>
+
+  </div>
 </div>
