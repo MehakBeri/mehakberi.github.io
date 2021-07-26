@@ -1,4 +1,4 @@
-<div class="jumbotron">
+<!-- <div class="jumbotron">
     <h1 class="display-4">PORTFOLO</h1>
     <p class="lead">I enjoy telling stories via data & buildling software</p>
     <hr class="my-4">
@@ -7,4 +7,126 @@
       <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
     </p>
     <p>todo: center the text and have a white border with a fading black bg. also exp with fonts. plus add dynamic bg to ths component</p>
+</div> -->
+
+<div class="container-fluid" style="margin-top: 100px;">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Filter by :
+      <button type="button" class="btn btn-default btn-xs btn-tag" (click)="filter('All')">All</button>
+      <button type="button" class="btn btn-primary btn-xs btn-tag" (click)="filter('Web App')">Web App</button>
+      <button type="button" class="btn btn-primary btn-xs btn-tag" (click)="filter('Side Project')">Side Project</button>
+      <button type="button" class="btn btn-info btn-xs btn-tag" (click)="filter('jQuery')">jQuery</button>
+      <button type="button" class="btn btn-info btn-xs btn-tag" (click)="filter('Ruby')">Ruby</button>
+      <button type="button" class="btn btn-info btn-xs btn-tag" (click)="filter('Ruby on Rails')">Ruby on Rails</button>
+      </p>
+    </div>
+    </div>
+  <div class="row">
+    <div class="col-sm-4"  #project>
+      <div class="panel panel-default">
+        <div class="panel-heading title">
+          <h3 class="panel-title">Panel title 1</h3>
+        </div>
+        <div class="panel-body">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </div>
+        <div class="panel-footer tag">
+          <span class="label label-primary hidden">All</span>
+          <span class="label label-primary">Web App</span>
+          <span class="label label-default">Bootstrap</span>
+          <span class="label label-default">jQuery</span>
+          <span class="label label-default">Ruby on Rails</span>
+        </div>
+      </div>
+
+    </div>
+        <div class="col-sm-4" #project>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title 2</h3>
+        </div>
+        <div class="panel-body">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </div>
+        <div class="panel-footer">
+          <span class="label label-primary hidden">All</span>
+          <span class="label label-primary">Side Project</span>
+          <span class="label label-default">Bootstrap</span>
+          <span class="label label-default">jQuery</span>
+        </div>
+      </div>
+
+    </div>
+        <div class="col-sm-4" #project>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title 3</h3>
+        </div>
+        <div class="panel-body">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </div>
+        <div class="panel-footer">
+          <span class="label label-primary hidden">All</span>
+          <span class="label label-primary">Side Project</span>
+          <span class="label label-default">Ruby</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm-4" #project>
+      <div class="panel panel-default">
+        <div class="panel-heading title">
+          <h3 class="panel-title">Panel title 4</h3>
+        </div>
+        <div class="panel-body">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </div>
+        <div class="panel-footer tag">
+          <span class="label label-primary hidden">All</span>
+          <span class="label label-primary">Web App</span>
+          <span class="label label-default">Bootstrap</span>
+          <span class="label label-default">jQuery</span>
+          <span class="label label-default">Ruby on Rails</span>
+        </div>
+      </div>
+
+    </div>
+        <div class="col-sm-4" #project>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title 5</h3>
+        </div>
+        <div class="panel-body">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </div>
+        <div class="panel-footer">
+          <span class="label label-primary hidden">All</span>
+          <span class="label label-primary">Side Project</span>
+          <span class="label label-default">Bootstrap</span>
+          <span class="label label-default">jQuery</span>
+        </div>
+      </div>
+
+    </div>
+        <div class="col-sm-4" #project>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title 6</h3>
+        </div>
+        <div class="panel-body">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </div>
+        <div class="panel-footer">
+          <span class="label label-primary hidden">All</span>
+          <span class="label label-primary">Side Project</span>
+          <span class="label label-default">Ruby</span>
+        </div>
+      </div>
+
+    </div>
+    
+    
+  </div>
 </div>
+
