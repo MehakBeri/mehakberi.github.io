@@ -1,132 +1,131 @@
-<!-- <div class="jumbotron">
-    <h1 class="display-4">PORTFOLO</h1>
-    <p class="lead">I enjoy telling stories via data & buildling software</p>
-    <hr class="my-4">
-    <p>Scroll to learn more. Need to add linkedin, email & git link </p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
-    <p>todo: center the text and have a white border with a fading black bg. also exp with fonts. plus add dynamic bg to ths component</p>
-</div> -->
-
 <div class="container-fluid" style="margin-top: 100px;">
   <div class="row">
     <div class="col-sm-12">
       <p>Filter by :
-      <button type="button" class="btn btn-default btn-xs btn-tag" (click)="filter('All')">All</button>
-      <button type="button" class="btn btn-primary btn-xs btn-tag" (click)="filter('Web App')">Web App</button>
-      <button type="button" class="btn btn-primary btn-xs btn-tag" (click)="filter('Side Project')">Side Project</button>
-      <button type="button" class="btn btn-info btn-xs btn-tag" (click)="filter('jQuery')">jQuery</button>
-      <button type="button" class="btn btn-info btn-xs btn-tag" (click)="filter('Ruby')">Ruby</button>
-      <button type="button" class="btn btn-info btn-xs btn-tag" (click)="filter('Ruby on Rails')">Ruby on Rails</button>
+      <button type="button" class="btn btn-info" (click)="filter('All')">All</button>&nbsp;
+      <button type="button" class="btn btn-primary" (click)="filter('Web App')">Web App</button>&nbsp;
+      <button type="button" class="btn btn-warning" (click)="filter('Side Project')">Side Project</button>&nbsp;
+      <button type="button" class="btn btn-secondary" (click)="filter('jQuery')">jQuery</button>&nbsp;
+      <button type="button" class="btn btn-success" (click)="filter('Data Science')">Data Science</button>&nbsp;
+      <button type="button" class="btn btn-dark" (click)="filter('Python')">Python</button>&nbsp;
       </p>
     </div>
-    </div>
+  </div>
   <div class="row">
-    <div class="col-sm-4"  #project>
-      <div class="panel panel-default">
-        <div class="panel-heading title">
-          <h3 class="panel-title">Panel title 1</h3>
+    <div class="col-sm-4" #project>
+      <div class="card border-dark mb-3">
+        <div class="card-header bg-transparent border-dark">Header 1</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
-        <div class="panel-body">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-        </div>
-        <div class="panel-footer tag">
-          <span class="label label-primary hidden">All</span>
-          <span class="label label-primary">Web App</span>
-          <span class="label label-default">Bootstrap</span>
-          <span class="label label-default">jQuery</span>
-          <span class="label label-default">Ruby on Rails</span>
+        <div class="card-footer bg-transparent border-dark">
+          <button type="button" class="btn btn-info" (click)="filter('All')">All</button>&nbsp;
+          <button type="button" class="btn btn-primary" (click)="filter('Web App')">Web App</button>&nbsp;
+          <button type="button" class="btn btn-warning" (click)="filter('Side Project')">Side Project</button>&nbsp;
         </div>
       </div>
-
-    </div>
-        <div class="col-sm-4" #project>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title 2</h3>
-        </div>
-        <div class="panel-body">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-        </div>
-        <div class="panel-footer">
-          <span class="label label-primary hidden">All</span>
-          <span class="label label-primary">Side Project</span>
-          <span class="label label-default">Bootstrap</span>
-          <span class="label label-default">jQuery</span>
-        </div>
-      </div>
-
-    </div>
-        <div class="col-sm-4" #project>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title 3</h3>
-        </div>
-        <div class="panel-body">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-        </div>
-        <div class="panel-footer">
-          <span class="label label-primary hidden">All</span>
-          <span class="label label-primary">Side Project</span>
-          <span class="label label-default">Ruby</span>
-        </div>
-      </div>
-
     </div>
     <div class="col-sm-4" #project>
-      <div class="panel panel-default">
-        <div class="panel-heading title">
-          <h3 class="panel-title">Panel title 4</h3>
+      <div class="card border-dark mb-3">
+        <div class="card-header bg-transparent border-dark">Header 2</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
-        <div class="panel-body">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-        </div>
-        <div class="panel-footer tag">
-          <span class="label label-primary hidden">All</span>
-          <span class="label label-primary">Web App</span>
-          <span class="label label-default">Bootstrap</span>
-          <span class="label label-default">jQuery</span>
-          <span class="label label-default">Ruby on Rails</span>
+        <div class="card-footer bg-transparent border-dark">
+          <button type="button" class="btn btn-info" (click)="filter('All')">All</button>&nbsp;
+          <button type="button" class="btn btn-secondary" (click)="filter('jQuery')">jQuery</button>&nbsp;
+          <button type="button" class="btn btn-success" (click)="filter('Data Science')">Data Science</button>&nbsp;
         </div>
       </div>
-
     </div>
-        <div class="col-sm-4" #project>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title 5</h3>
+    <div class="col-sm-4" #project>
+      <div class="card border-dark mb-3">
+        <div class="card-header bg-transparent border-dark">Header 3</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
-        <div class="panel-body">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-        </div>
-        <div class="panel-footer">
-          <span class="label label-primary hidden">All</span>
-          <span class="label label-primary">Side Project</span>
-          <span class="label label-default">Bootstrap</span>
-          <span class="label label-default">jQuery</span>
+        <div class="card-footer bg-transparent border-dark">
+          <button type="button" class="btn btn-info" (click)="filter('All')">All</button>&nbsp;
+          <button type="button" class="btn btn-success" (click)="filter('Data Science')">Data Science</button>&nbsp;
+          <button type="button" class="btn btn-dark" (click)="filter('Python')">Python</button>&nbsp;
         </div>
       </div>
-
     </div>
-        <div class="col-sm-4" #project>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title 6</h3>
+    <div class="col-sm-4" #project>
+      <div class="card border-dark mb-3">
+        <div class="card-header bg-transparent border-dark">Header 4</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
-        <div class="panel-body">
-          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-        </div>
-        <div class="panel-footer">
-          <span class="label label-primary hidden">All</span>
-          <span class="label label-primary">Side Project</span>
-          <span class="label label-default">Ruby</span>
+        <div class="card-footer bg-transparent border-dark">
+          <button type="button" class="btn btn-info" (click)="filter('All')">All</button>&nbsp;
+          <button type="button" class="btn btn-primary" (click)="filter('Web App')">Web App</button>&nbsp;
+          <button type="button" class="btn btn-warning" (click)="filter('Side Project')">Side Project</button>&nbsp;
+          <button type="button" class="btn btn-secondary" (click)="filter('jQuery')">jQuery</button>&nbsp;
         </div>
       </div>
-
     </div>
-    
-    
+    <div class="col-sm-4" #project>
+      <div class="card border-dark mb-3">
+        <div class="card-header bg-transparent border-dark">Header 1</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer bg-transparent border-dark">
+          <button type="button" class="btn btn-info" (click)="filter('All')">All</button>&nbsp;
+          <button type="button" class="btn btn-primary" (click)="filter('Web App')">Web App</button>&nbsp;
+          <button type="button" class="btn btn-warning" (click)="filter('Side Project')">Side Project</button>&nbsp;
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4" #project>
+      <div class="card border-dark mb-3">
+        <div class="card-header bg-transparent border-dark">Header 2</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer bg-transparent border-dark">
+          <button type="button" class="btn btn-info" (click)="filter('All')">All</button>&nbsp;
+          <button type="button" class="btn btn-secondary" (click)="filter('jQuery')">jQuery</button>&nbsp;
+          <button type="button" class="btn btn-success" (click)="filter('Data Science')">Data Science</button>&nbsp;
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4" #project>
+      <div class="card border-dark mb-3">
+        <div class="card-header bg-transparent border-dark">Header 3</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer bg-transparent border-dark">
+          <button type="button" class="btn btn-info" (click)="filter('All')">All</button>&nbsp;
+          <button type="button" class="btn btn-success" (click)="filter('Data Science')">Data Science</button>&nbsp;
+          <button type="button" class="btn btn-dark" (click)="filter('Python')">Python</button>&nbsp;
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4" #project>
+      <div class="card border-dark mb-3">
+        <div class="card-header bg-transparent border-dark">Header 4</div>
+        <div class="card-body text-dark">
+          <h5 class="card-title">Success card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="card-footer bg-transparent border-dark">
+          <button type="button" class="btn btn-info" (click)="filter('All')">All</button>&nbsp;
+          <button type="button" class="btn btn-primary" (click)="filter('Web App')">Web App</button>&nbsp;
+          <button type="button" class="btn btn-warning" (click)="filter('Side Project')">Side Project</button>&nbsp;
+          <button type="button" class="btn btn-secondary" (click)="filter('jQuery')">jQuery</button>&nbsp;
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -16,7 +16,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 - Since this project uses the Angular router, the routes configured on it will not be available from the server when requested directly on the browser address bar or when a page is refreshed. In those instances, user will get a 404 page which is not ideal. To remedy this: indicate to the server that if it gets a request for a page that it does not have, it should send the route to the index.html page. To do this:- copy the index.html file and rename the copy to 404.html. `cp docs/index.html docs/404.html`
 - Add, commit and push changes to remote git repo. `git push origin master`
 - Ensure that the Gihub repo's settings for pages has source set up as master/docs
-Source: https://blog.bitsrc.io/deploy-your-angular-project-to-github-pages-7cbacb96f35b 
+- Source: https://blog.bitsrc.io/deploy-your-angular-project-to-github-pages-7cbacb96f35b 
 
 
 
