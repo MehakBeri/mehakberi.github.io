@@ -4,3 +4,9 @@
 .hidden {
   display: none;
 }
+.col-sm-4 {
+  margin-top: 20px;
+}
+.btn {
+  margin-top: 10px;
+}
